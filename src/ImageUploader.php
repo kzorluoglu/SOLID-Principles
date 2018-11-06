@@ -1,4 +1,5 @@
 <?php
+namespace kzorluoglu\solid;
 /**
  * Created by PhpStorm.
  * User: koray
@@ -8,8 +9,6 @@
 
 /**
  * Class ImageUploader
- *
- * Single Responsibility
  */
 class ImageUploader {
 
@@ -38,7 +37,3 @@ class ImageUploader {
 		}
 	}
 }
-
-$imageUpload = new ImageUploader("Image");
-
-$imageUpload->validate()->resize()->upload();
