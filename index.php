@@ -36,3 +36,8 @@ $seniorDeveloper->makeProject();
 $seniorDeveloper->useSOLIDPrinciples();
 $juniorDeveloper = new \kzorluoglu\solid\JuniorDeveloper();
 $juniorDeveloper->makeProject();
+
+// Dependency Inversion
+
+$log = new \kzorluoglu\solid\Log();
+
