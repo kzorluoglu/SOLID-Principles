@@ -20,8 +20,11 @@ $turkish = new \kzorluoglu\solid\TurkishTea();
 
 $teaMaker = new \kzorluoglu\solid\TeaMaker($reval);
 $revalTea = "Reval's tea maked : **** ". $teaMaker->makeTea();
-
 $teaMaker = new \kzorluoglu\solid\TeaMaker($turkish);
 $turkishTea = "Turkish Tea maked : **** ". $teaMaker->makeTea();
 
-echo $revalTea .", ". $turkishTea;
+// Liskov Substitution
+
+$war = new \kzorluoglu\solid\War();
+$war->makeDiscover();
+$war->startShoot();
