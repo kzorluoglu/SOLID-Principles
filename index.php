@@ -28,3 +28,11 @@ $turkishTea = "Turkish Tea maked : **** ". $teaMaker->makeTea();
 $war = new \kzorluoglu\solid\War();
 $war->makeDiscover();
 $war->startShoot();
+
+
+// Interface Segregation
+$seniorDeveloper = new \kzorluoglu\solid\SeniorDeveloper();
+$seniorDeveloper->makeProject();
+$seniorDeveloper->useSOLIDPrinciples();
+$juniorDeveloper = new \kzorluoglu\solid\JuniorDeveloper();
+$juniorDeveloper->makeProject();
